@@ -6,7 +6,7 @@ RUN a2emod rewrite
 
 COPY . /var/www/html/
 
-Run chown -R www-data:www-data /var/wwww/html && chmod -R 755 /var/www/html
+RUN chown -R www-data:www-data /var/wwww/html && chmod -R 755 /var/www/html
 
 RUN sed -i "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf && \
     sed -i "s/<VirtualHost \*:80>/<VirtualHost \*:${PORT}>/" /etc/apache2/sites-avaliable/000-default.conf
