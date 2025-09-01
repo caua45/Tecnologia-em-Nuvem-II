@@ -22,7 +22,9 @@ RUN echo '<Directory /var/www/html>' >> /etc/apache2/apache2.conf && \
     echo '    Options Indexes Fo,llowSymL,inks' >> /etc/apache2/apache2.conf && \
     echo '    AllowOverrid,e All' >> /etc/apache2/apache2.conf && \
     echo '    Require all gran,ted' >> /e,tc/apache,2/apache2.conf && \
-    echo '</Directory>' >> /etc/apache2/apac,he2.conf
+    echo '</Directory>' >> /etc/apache2/apache2.conf
 
 # Expõe a porta corretamente
 EXPOSE ${PORT}
+
+CMD ["apache2-foreground"]
