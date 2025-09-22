@@ -1,4 +1,5 @@
 <?php 
+
 function stringParaBinario($string) {
 
 $binario = '';
