@@ -9,7 +9,7 @@ $binario = '';
   return $binario;
 }
 
-$frase = "Olá mundo!";
+$frase = "Caua candido rodrigues";
 $fraseBinario = stringParaBinario($frase);
 
 echo "Frase original: " . $frase . "<br>";
